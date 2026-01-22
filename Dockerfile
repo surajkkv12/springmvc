@@ -1,7 +1,6 @@
 FROM tomcat:9.0-jdk8
 
-COPY springmvc.war /usr/local/tomcat/webapps/
-
-EXPOSE 8080
+COPY ROOT.war /usr/local/tomcat/webapps/ROOT.war
 
 CMD ["catalina.sh", "run"]
+
